@@ -10,18 +10,25 @@
   
     background-color: rgb(20, 40, 72);
     color: whitesmoke;
-  }
+}
 
 
 .container ul {
     display: flex;
     gap: 0rem 3rem;
     justify-content: space-around;
-
+    
 }
 
 .container ul li {
     list-style: none;
-    text-decoration: none;
+    text-decoration: 'none';
     font-size: 1.2rem;
+}
+
+.deco li {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 3rem;
 }
