@@ -6,6 +6,7 @@ import axios from "axios"
 import ProductList from './ProductList/productList'
 import { Route, Routes } from 'react-router-dom'
 import ProductItem from './ProductItem/ProductItem'
+import Footer from './Footer/Footer'
 
 function App() {
   const [productos, setProductos] = useState([])
@@ -28,6 +29,7 @@ function App() {
         <Route path="/productos/:id" element={<ProductItem productos={productos}/>} />
         <Route path="*" element={<h2>404 NOT FOUND</h2>} />
       </Routes>
+      <Footer />
     </div>
   )
 }

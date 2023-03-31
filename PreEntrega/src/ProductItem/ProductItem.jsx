@@ -3,18 +3,24 @@ import styles from "./productItem.module.css"
 
 const ProductItem = ({ productos }) => {
 
-    const {id} = useParams()
+    const { id } = useParams()
     const producto = productos.find((producto) => producto.id == id)
 
     return (
-        <div>
-            <h3>{producto.title}</h3>
-            <img src={producto.image} alt={producto.title} />
-            <h4>{producto.category}</h4>
-            <p>{producto.description}</p>
-            <p>Rating:{producto.rating.rate}</p>
-            <button>${producto.price}</button>
+        <div className={styles.productCard}>
+        <h3>{producto.title}</h3>
+        <div className={styles.productImageContainer}>
+          <img src={producto.image} alt={producto.title} />
         </div>
+        <div className={styles.productInfoContainer}>
+          <p>{producto.description}</p>
+          <div className={styles.productRatingContainer}>
+            <span className={styles.rating}>Rating: {producto.rating.rate}</span>
+            <span className={styles.reviewCount}>({producto.rating.count} reviews)</span>
+          </div>
+          <button className={styles.buyButton}>${producto.price}</button>
+        </div>
+      </div>
     )
 }
 

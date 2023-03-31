@@ -3,14 +3,18 @@ import styles from "./CardList.module.css"
 
 const CardList = ({ producto }) => {
     return (
-        <Link to={`${producto.id}`}>
         <div className={styles.card}>
+            <Link to={`${producto.id}`}>
+                <img src={producto.image} alt={producto.title} />
+            </Link>
+
             <h3>{producto.title}</h3>
-            <img src={producto.image} alt={producto.title} />
-            <p>{producto.description}</p>
-            <button>${producto.price}</button>
+            <p>${producto.price}</p>
+            
+            <Link to={`${producto.id}`}>
+                <button>Ver producto</button>
+            </Link>
         </div>
-        </Link>
     )
 }
 

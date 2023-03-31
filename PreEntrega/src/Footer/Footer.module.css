@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(20, 40, 72);
+    color: #FFFFFF;
+    height: 100px;
+  }
+  
+  .list {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .list li {
+    margin-right: 1.5rem;
+  }
+  
+  .list a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .disclaimer {
+    font-size: 0.875rem;
+  }
+  
