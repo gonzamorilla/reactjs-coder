@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import styles from "./productItem.module.css"
+import SetQuantityButton from "../SetQuantityButton/setQuantityButton"
 
 const ProductItem = ({ productos }) => {
 

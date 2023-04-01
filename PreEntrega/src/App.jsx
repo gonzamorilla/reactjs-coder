@@ -7,6 +7,7 @@ import ProductList from './ProductList/productList'
 import { Route, Routes } from 'react-router-dom'
 import ProductItem from './ProductItem/ProductItem'
 import Footer from './Footer/Footer'
+import db from "../../db/firebase-config"
 
 function App() {
   const [productos, setProductos] = useState([])
