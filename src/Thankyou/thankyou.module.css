@@ -1,0 +1,39 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact {
+    margin-bottom: 40px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .more {
+    font-size: 1.1rem;
+  }
+  

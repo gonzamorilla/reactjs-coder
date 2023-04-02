@@ -53,3 +53,43 @@
     color: #0072C6;
   }
   
+  .checkoutForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .checkoutLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .checkoutInput {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+  }
+  
+  .checkoutTextarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+  }
+  
+  .checkoutButton {
+    padding: 10px;
+    background-color: #2d9cdb;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .checkoutButton:hover {
+    background-color: #2a8dc2;
+  }
+  

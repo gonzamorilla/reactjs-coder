@@ -10,17 +10,71 @@ const Checkout = () => {
     return <div>Producto no encontrado</div>;
   }
 
+  const handleBuyClick = () => {
+    // Renderizar el componente Thankyou
+  };
+
   return (
     <div className={styles.checkoutContainer}>
       <h2 className={styles.checkoutTitle}>Resumen de compra</h2>
       <div className={styles.checkoutItemContainer}>
-        <img src={selectedProduct.Image} alt={selectedProduct.Title} className={styles.checkoutItemImage} />
+        <img
+          src={selectedProduct.Image}
+          alt={selectedProduct.Title}
+          className={styles.checkoutItemImage}
+        />
         <div className={styles.checkoutItemDetails}>
-          <h3 className={styles.checkoutItemTitle}>{selectedProduct.Title}</h3>
-          <p className={styles.checkoutItemPrice}>Precio: ${selectedProduct.Price}</p>
+          <h3 className={styles.checkoutItemTitle}>
+            {selectedProduct.Title}
+          </h3>
+          <p className={styles.checkoutItemPrice}>
+            Precio: ${selectedProduct.Price}
+          </p>
         </div>
       </div>
-      <Link to="/productos" className={styles.checkoutLink}>Volver a la lista de productos</Link>
+      <form className={styles.checkoutForm}>
+        <label htmlFor="nombre" className={styles.checkoutLabel}>
+          Nombre:
+        </label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          className={styles.checkoutInput}
+        />
+        <label htmlFor="apellido" className={styles.checkoutLabel}>
+          Apellido:
+        </label>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          className={styles.checkoutInput}
+        />
+        <label htmlFor="email" className={styles.checkoutLabel}>
+          Email:
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          className={styles.checkoutInput}
+        />
+        <label htmlFor="direccion" className={styles.checkoutLabel}>
+          Dirección:
+        </label>
+        <textarea
+          id="direccion"
+          name="direccion"
+          rows="3"
+          className={styles.checkoutTextarea}
+        ></textarea>
+        <Link to="/thankyou-page" onClick={handleBuyClick}>
+          <button type="submit" className={styles.checkoutButton}>
+            Realizar compra
+          </button>
+        </Link>
+      </form>
     </div>
   );
 };
