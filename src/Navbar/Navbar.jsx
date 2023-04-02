@@ -22,9 +22,11 @@ const Navbar = () => {
         <li>Productos</li>
         </Link>
 
-        <Link to="/check-out">
-        <ShoppingCartIcon/>
+        <Link to="/check-out" className="carrito">
+        <li><ShoppingCartIcon/></li>
         </Link>
+
+        
       </ul>
     </nav>
   )

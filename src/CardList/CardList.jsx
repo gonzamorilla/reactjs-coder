@@ -3,9 +3,6 @@ import styles from "./CardList.module.css"
 import React from 'react';
 
 const CardList = ({ producto }) => {
-
-    console.log(producto);
-
     return (
         <div className={styles.card}>
             <Link to={`${producto.id}`}>

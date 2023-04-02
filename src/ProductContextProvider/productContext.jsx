@@ -5,7 +5,7 @@ export const SelectedProductContext = createContext();
 export const SelectedProductUpdateContext = createContext();
 
 const ProductContextProvider = (props) => {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState([]);
 
   return (
 <ProductContext.Provider value={{ selectedProduct, setSelectedProduct }}>

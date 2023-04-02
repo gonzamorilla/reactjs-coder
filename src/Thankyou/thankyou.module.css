@@ -1,39 +1,89 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .message {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-  }
-  
-  .contact {
-    margin-bottom: 40px;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  .contact h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .contact li {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  .more {
-    font-size: 1.1rem;
-  }
-  
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 70%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.purchaseDetail {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.thxItemContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.thxItemImage {
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+.thxItemDetails {
+  text-align: left;
+}
+
+.thxItemTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.thxItemPrice {
+  font-size: 1.2rem;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.more {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thxButton {
+  background-color: #242427;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30rem;
+}
+
+.thxButton:hover {
+  background-color: #5e5f65;
+}

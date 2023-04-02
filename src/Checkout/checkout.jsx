@@ -17,21 +17,30 @@ const Checkout = () => {
   return (
     <div className={styles.checkoutContainer}>
       <h2 className={styles.checkoutTitle}>Resumen de compra</h2>
-      <div className={styles.checkoutItemContainer}>
-        <img
-          src={selectedProduct.Image}
-          alt={selectedProduct.Title}
-          className={styles.checkoutItemImage}
-        />
-        <div className={styles.checkoutItemDetails}>
-          <h3 className={styles.checkoutItemTitle}>
-            {selectedProduct.Title}
-          </h3>
-          <p className={styles.checkoutItemPrice}>
-            Precio: ${selectedProduct.Price}
-          </p>
-        </div>
-      </div>
+          {selectedProduct.map((product, index) => (
+          <div className={styles.checkoutItemContainer}>
+            <img
+              src={product.Image}
+              alt={product.Title}
+              className={styles.checkoutItemImage}
+            />
+            <div className={styles.checkoutItemDetails}>
+              <h3 className={styles.checkoutItemTitle}>
+                {product.Title}
+              </h3>
+              <p className={styles.checkoutItemPrice}>
+                Cantidad: {product.Count}
+              </p>
+              <p className={styles.checkoutItemPrice}>
+                Precio Unitario: ${product.Price}
+              </p>
+              <p className={styles.checkoutItemPrice}>
+                Precio Final: ${product.FinalPrice}
+              </p>
+            </div>
+          </div>
+        )) 
+      }
       <form className={styles.checkoutForm}>
         <label htmlFor="nombre" className={styles.checkoutLabel}>
           Nombre:

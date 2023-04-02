@@ -10,7 +10,7 @@
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
-    color: #0072C6;
+    color: #152166;
   }
   
   .checkoutItemContainer {
@@ -56,7 +56,8 @@
   .checkoutForm {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }
   
   .checkoutLabel {
@@ -82,14 +83,16 @@
   
   .checkoutButton {
     padding: 10px;
-    background-color: #2d9cdb;
+    background-color: #d31b15;
     color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
   }
   
   .checkoutButton:hover {
-    background-color: #2a8dc2;
+    background-color: #ff0000;
   }
   
