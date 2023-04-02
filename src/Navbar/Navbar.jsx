@@ -17,11 +17,11 @@ const Navbar = () => {
         <Link to="/">
         <li>Inicio</li>
         </Link>
-        <li>Nosotros</li>
+
         <Link to="/productos">
         <li>Productos</li>
         </Link>
-        <li>Contacto</li>
+
         <Link to="/check-out">
         <ShoppingCartIcon/>
         </Link>

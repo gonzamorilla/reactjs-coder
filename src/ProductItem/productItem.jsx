@@ -1,16 +1,14 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import styles from "./productItem.module.css";
 import { useEffect, useState, useContext } from "react";
+import { ProductContext } from "../ProductContextProvider/productContext";
 import React from 'react';
-import { SelectedProductContext, SelectedProductUpdateContext } from "./ProductList";
 
 const ProductItem = ({ productos }) => {
-  
   const { id } = useParams();
   const producto = productos.find((producto) => producto.id == id);
   const history = useNavigate ();
-  const selectedProduct = useContext(SelectedProductContext);
-  const setSelectedProduct = useContext(SelectedProductUpdateContext);
+  const { setSelectedProduct } = useContext(ProductContext); // Aquí se usa el hook useContext para acceder a los datos del contexto
 
   const [productPrice, setProductPrice] = useState(producto.Price);
   const [productQuantity, setproductQuantity] = useState(1);
@@ -25,7 +23,6 @@ const ProductItem = ({ productos }) => {
 
   const handleBuyClick = () => {
     setSelectedProduct(producto);
-    history.push("/check-out");
   };
 
   return (
@@ -42,9 +39,9 @@ const ProductItem = ({ productos }) => {
       <input id="identify" onChange={onChange} type="number" min="1" defaultValue="1" />
 
       <div>
-        <button className={styles.buyButton} onClick={handleBuyClick}>
-          ${productPrice}
-        </button>
+        <Link to="/check-out" onClick={handleBuyClick}>
+          <button className={styles.buyButton}>${productPrice}</button>
+        </Link>
       </div>
     </div>
   );
